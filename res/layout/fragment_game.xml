@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/gameFrame"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/frontscreen_background" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:orientation="vertical"
+    	android:layout_gravity="top|left"
+    	android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+    >
+    	
+        <TextView
+	        android:id="@+id/smashPlayerNameTextView"
+	        android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	        style="@style/PlayerNameFont"
+	        android:text="@string/smash_player_name"
+	    />
+        
+        <LinearLayout
+            android:id="@+id/livesContainer"
+	        android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:orientation="horizontal"
+	        android:layout_marginTop="5dp"
+	    />
+        
+    </LinearLayout>
+    
+    <TextView
+        android:id="@+id/scoreTextView"
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_gravity="top|right"
+    	android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        style="@style/ScoreFont"
+        android:text="@string/score"
+    />
+    
+    <FrameLayout android:id="@+id/progressContainer"
+	    android:background="@drawable/frontscreen_background"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:clickable="true"
+	    >
+	    <ProgressBar
+	      style="@android:style/Widget.ProgressBar.Large"
+	      android:layout_width="wrap_content"
+	      android:layout_height="wrap_content"
+	      android:layout_gravity="center"
+	      />
+  	</FrameLayout>
+    
+</FrameLayout>

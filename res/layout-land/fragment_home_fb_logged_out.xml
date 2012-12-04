@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res/com.facebook.android.friendsmash"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:orientation="vertical"
+	    android:background="@drawable/frontscreen_background_land" >
+	    
+	    <RelativeLayout
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content" >
+	        
+		    <ImageView
+		        android:id="@+id/imageView1"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:paddingTop="4dip"
+		        android:src="@drawable/welcome_panel" />
+		    
+		    <LinearLayout
+		        android:layout_width="wrap_content"
+		    	android:layout_height="wrap_content"
+		        android:layout_marginLeft="86dp"
+		        android:layout_marginTop="10dp"
+		    	android:orientation="vertical"
+		    	>
+		    	
+	       	    <TextView
+			        android:id="@+id/welcomeTextView"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        style="@style/PlayerNameFont"
+			        android:text="@string/welcome_message" />
+	       	    
+	       	    <TextView
+			        android:id="@+id/youScoredTextView"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        style="@style/YouScoredFont"
+			        android:text="@string/you_scored_message" />
+		        
+		    </LinearLayout>
+		    
+	    </RelativeLayout>
+	    
+	    <FrameLayout
+	        android:layout_width="match_parent"
+	    	android:layout_height="match_parent"
+	    	>
+	    
+		   	<com.facebook.widget.LoginButton
+	            android:id="@+id/loginButton"
+	            android:layout_gravity="center"
+	            android:layout_marginBottom="5dp"
+	            custom:login_text=""
+	            custom:logout_text=""
+	            style="@style/login_button" />
+	   	
+	   	</FrameLayout>
+	
+	</LinearLayout>
+	
+	<FrameLayout android:id="@+id/progressContainer"
+	    android:background="@drawable/frontscreen_background"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:clickable="true"
+	    >
+	    <ProgressBar
+	      style="@android:style/Widget.ProgressBar.Large"
+	      android:layout_width="wrap_content"
+	      android:layout_height="wrap_content"
+	      android:layout_gravity="center"
+	      />
+  	</FrameLayout>
+	
+</FrameLayout>

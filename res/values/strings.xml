@@ -1,0 +1,14 @@
+<resources>
+
+    <string name="app_name">Friend Smash</string>
+    <string name="app_id">480369938658210</string>
+    <string name="title_activity_home">FRIEND SMASH</string>
+    <string name="welcome_message">Welcome, Player</string>
+    <string name="you_scored_message"></string>
+    <string name="smash_player_name">Smash Player !</string>
+    <string name="score">Score: 0</string>
+    <string name="no_score">Let\'s smash some friends!</string>
+    <string name="network_error">Please check your network connection</string>
+    <string name="game_over">Game Over!</string>
+
+</resources>

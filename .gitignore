@@ -1,0 +1,4 @@
+# Ignore Following Directories
+##############################
+gen
+bin
